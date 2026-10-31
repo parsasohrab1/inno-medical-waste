@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inno-medical-waste"
+version = "0.4.0"
+description = "inno-medical-waste: TRL 4 lab prototype validated on synthetic data"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,113 @@
+{
+  "package": "inno_medical_waste",
+  "trl_claim": 4,
+  "data": "synthetic only",
+  "all_pass": true,
+  "runs": [
+    {
+      "seed": 0,
+      "metrics": {
+        "violation_recall": 1.0,
+        "violation_precision": 1.0,
+        "qr_tamper_detection": 1.0,
+        "n_injected": 180
+      },
+      "criteria": [
+        {
+          "metric": "violation_recall",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "injected violations detected"
+        },
+        {
+          "metric": "violation_precision",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "alerts that are real injected violations"
+        },
+        {
+          "metric": "qr_tamper_detection",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "single-digit QR corruptions detected by check digits"
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "violation_recall": 1.0,
+        "violation_precision": 1.0,
+        "qr_tamper_detection": 1.0,
+        "n_injected": 180
+      },
+      "criteria": [
+        {
+          "metric": "violation_recall",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "injected violations detected"
+        },
+        {
+          "metric": "violation_precision",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "alerts that are real injected violations"
+        },
+        {
+          "metric": "qr_tamper_detection",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "single-digit QR corruptions detected by check digits"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "violation_recall": 1.0,
+        "violation_precision": 1.0,
+        "qr_tamper_detection": 1.0,
+        "n_injected": 180
+      },
+      "criteria": [
+        {
+          "metric": "violation_recall",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "injected violations detected"
+        },
+        {
+          "metric": "violation_precision",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "alerts that are real injected violations"
+        },
+        {
+          "metric": "qr_tamper_detection",
+          "op": ">=",
+          "threshold": 0.99,
+          "value": 1.0,
+          "pass": true,
+          "description": "single-digit QR corruptions detected by check digits"
+        }
+      ]
+    }
+  ]
+}
